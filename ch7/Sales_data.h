@@ -11,6 +11,8 @@ class Sales_data {
     friend ostream& operator << (ostream&, const Sales_data&);
     friend bool operator < (const Sales_data&, const Sales_data&);
     friend bool operator == (const Sales_data&, const Sales_data&);
+    friend istream& read(istream&, Sales_data&);
+    friend ostream& print(ostream&, const Sales_data&);
 
     public:
         Sales_data() = default;
